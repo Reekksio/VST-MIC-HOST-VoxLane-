@@ -3,7 +3,7 @@ VoxLane is a portable real-time VST3 microphone host and audio processor for Win
 
 It allows you to route your microphone through a customizable VST3 plugin chain and send the processed signal to a selected audio output.
 
-No installation is required — VoxLane can be run as a portable application.
+No installation is required - VoxLane can be run as a portable application.
 
 ## Screenshot
 
@@ -23,7 +23,7 @@ No installation is required — VoxLane can be run as a portable application.
 - Safety limiter
 - Automatic audio reconnection
 - Start with Windows option
-- Portable — no installation required
+- Portable - no installation required
 
 ## Using VoxLane with a Virtual Audio Cable
 
@@ -54,7 +54,7 @@ Future versions of VoxLane are planned to include:
 
 - Original built-in audio plugins
 - Audio processing without requiring external VST3 plugins
-- **Fun Voices** — presets for funny and unusual voice effects created using VoxLane's built-in plugins
+- **Fun Voices** - presets for funny and unusual voice effects created using VoxLane's built-in plugins
 - More preset options
 - Additional audio processing and routing features
 
