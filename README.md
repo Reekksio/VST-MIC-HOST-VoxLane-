@@ -63,4 +63,4 @@ The device test tone tests the output directly. If it plays but your microphone 
 
 VoxLane is under development. Beta 0.7 is a prerelease; report reproducible issues through GitHub Issues.
 
-This repository contains downloads, screenshots and the public account website. The application's C++ source is not public at this stage. Open-source publication remains a future plan.
+This repository contains downloads, screenshots and the public account website. The application's C++ source is not public.
