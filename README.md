@@ -1,65 +1,66 @@
-# VST-MIC-HOST-VoxLane-
+# VoxLane — Beta 0.7
+
 VoxLane is a portable real-time VST3 microphone host and audio processor for Windows, built with C++ and JUCE.
 
-It allows you to route your microphone through a customizable VST3 plugin chain and send the processed signal to a selected audio output.
+Process your microphone with external VST3 plugins, VoxLane's built-in processors or 100 Fun Voices, then send it to your chosen output or a virtual audio cable.
 
-No installation is required - VoxLane can be run as a portable application.
+## Download
+
+[Download VoxLane Beta 0.7](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/releases/download/v0.7/VoxLane-Beta-0.7.zip) · [Release notes](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/releases/tag/v0.7)
+
+Extract the ZIP and run **VST Mic Host Beta.exe**. Keep `VSTScanner.exe`, `voxlane-public.json` and `ThirdParty` beside it. No installation is required.
+
+An account and an internet connection are required to sign in and verify Pro access. Sign in once; the session is saved in Windows Credential Manager without storing your password.
+
+## Free and Pro
+
+**VoxLane Pro costs PLN 25 once and is linked to your account. There is no subscription. This release uses real Stripe payments.** Buy Pro from Account in the app; access refreshes automatically after payment verification.
+
+- Free: external VST3 hosting, safety limiter, Compressor, High Pass, Low Pass, Parametric EQ, Low Shelf, High Shelf and Noise Gate.
+- Pro: the remaining VoxLane built-in plugins, editable Fun Voice macros and custom User voice presets.
+- All accounts can use the 100 factory Fun Voices with their standard settings.
+
+Test purchases and live purchases have separate entitlements. A sandbox purchase does not unlock this live release.
 
 ## Screenshot
 
-![VoxLane](assets/voxlane.png)
+![VoxLane Professional](assets/voxlane.png)
+
+![VoxLane Fun Voices](assets/fun-voices.png)
 
 ## Features
 
-- VST3 plugin scanning and loading
-- Custom VST3 processing chain
-- Plugin reordering and bypass
-- Plugin GUI support
-- Input and output device selection
-- Sample rate and buffer size configuration
-- Active input channel selection
-- Input and output gain controls
-- Preset saving and loading
-- Safety limiter
-- Automatic audio reconnection
-- Start with Windows option
-- Portable - no installation required
+- VST3 scanning, plugin editors, reordering and bypass
+- 28 visible VoxLane built-in plugins with their own editors
+- 100 Fun Voices in 10 categories; search and favourites
+- A/B comparison, Undo/Redo and reset in built-in plugin editors
+- Actual compressor gain-reduction metering
+- Favourite plugins and a VoxLane-only filter
+- Microphone/output selection, sample rate, buffer size and gain controls
+- Preset saving/loading and a safety limiter
+- Automatic device reconnection; None remains selected when chosen
+- Approximate audio latency display
+- Polish and English account interface
+- Close to Windows tray; double-click the tray icon to reopen
+- Optional start with Windows
 
-## Using VoxLane with a Virtual Audio Cable
+Fun Voices starts at **CLEAN / No Effect**. Pitch/formant and layered-voice processing add algorithmic latency; total latency also depends on the device buffer and plugin chain.
 
-To use your processed microphone signal in Discord, OBS, games or other applications, VoxLane can be used together with a virtual audio cable.
+## Discord, OBS and other applications
 
-You can use:
+Use a virtual audio cable such as [VB-CABLE](https://vb-audio.com/Cable/):
 
-[VB-CABLE Virtual Audio Device](https://vb-audio.com/Cable/)
+1. Select your microphone as VoxLane's input.
+2. Select **CABLE Input** as VoxLane's output.
+3. Configure your processing chain or choose a Fun Voice.
+4. Select **CABLE Output** as the microphone in Discord, OBS or another application.
 
-### Setup
+`Microphone → VoxLane → VB-CABLE → Discord / OBS / Game`
 
-1. Install VB-CABLE.
-2. Open VoxLane.
-3. Select your physical microphone as the input device.
-4. Select `CABLE Input` as the output device.
-5. Add and configure your VST3 plugins.
-6. In Discord, OBS, a game or another application, select `CABLE Output` as your microphone/input device.
+The device test tone tests the output directly. If it plays but your microphone is silent, check the selected microphone, its active channel and VoxLane's **Mute** control.
 
-Audio routing:
+## Project status
 
-`Microphone → VoxLane → VST3 Chain → VB-CABLE → Discord / OBS / Game / Other App`
+VoxLane is under development. Beta 0.7 is a prerelease; report reproducible issues through GitHub Issues.
 
-The application will then receive the microphone signal after it has been processed by VoxLane.
-
-## Planned Features
-
-Future versions of VoxLane are planned to include:
-
-- Original built-in audio plugins
-- Audio processing without requiring external VST3 plugins
-- **Fun Voices** - presets for funny and unusual voice effects created using VoxLane's built-in plugins
-- More preset options
-- Additional audio processing and routing features
-
-## Open Source
-
-VoxLane is currently under development.
-
-The project is planned to become open source in the future.
+This repository contains downloads, screenshots and the public account website. The application's C++ source is not public at this stage. Open-source publication remains a future plan.
