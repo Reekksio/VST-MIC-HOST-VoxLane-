@@ -63,4 +63,4 @@ The device test tone tests the output directly. If it plays but your microphone 
 
 VoxLane is under development. Beta 0.7 is a prerelease; report reproducible issues through GitHub Issues.
 
-This repository contains downloads, screenshots and the public account website. Source code for the [reconstructed 0.5 edition](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/tree/legacy-0.5) is publicly available, with [source and Windows binaries in its release](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/releases/tag/v0.5.0). The original 0.5 source snapshot was not retained; this edition reconstructs the external VST3 host without later product features. Beta 0.7 source code remains private.
+This repository contains downloads, screenshots and the public account website. The [VoxLane 0.5 source edition](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/tree/legacy-0.5) is publicly available, with [source code and Windows binaries in its release](https://github.com/Reekksio/VST-MIC-HOST-VoxLane-/releases/tag/v0.5.0). Beta 0.7 source code remains private.
